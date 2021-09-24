@@ -1,0 +1,27 @@
+* {font-family: Arial, Helvetica, sans-serif;}
+
+
+p {
+    color: blue;
+}
+
+.red-paragraph {
+    color:crimson;
+}
+
+#main-content {
+    color:darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li, p {
+    font-size: 30px;
+}
+
+.main-section p {
+    font-weight: bold;
+}
+
+nav .first {
+    font-weight: bold;
+}
