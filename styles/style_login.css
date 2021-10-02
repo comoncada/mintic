@@ -6,7 +6,10 @@
 }
 
 body{
-    background: #f1f1f1;
+
+    background-image: url(../img/shoe1.jpg);
+    background-size:cover;
+    
 }
 
 .container{
@@ -17,6 +20,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: #797979;
     
 }
 
@@ -24,8 +28,9 @@ body{
     display: flex;
     width: auto;
     height: auto;
-    background: #fff;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, 0.945);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
+    border-radius: 10px;
 }
 
 .login .link-login {
@@ -33,21 +38,21 @@ body{
 }
 
 .login{
-    padding: 40px;
-    position: relative;
+    padding: 60px;
+    position:relative;
 
 }
 
 .login h2{
     color: #797979;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .login input {
     width: 100%;
     padding: 5px;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
@@ -55,6 +60,27 @@ body{
     color: #333;
 
 }
+
+
+.login .cb{
+    display: block;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #797979;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.login .checkmark{
+    transform:translateY(-16px);
+}
+
+
 
 .login input:active,
 .login input :focus{
@@ -73,7 +99,7 @@ body{
 }
 
 .container .login-container .submit{
-    transform: translateX(280px);
+    transform: translateX(250px);
     padding: 20px;
 }
 
@@ -98,8 +124,9 @@ body{
 
 
 .link-login{
-    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #0092bf, #1233eb);
     padding: 40px;
+    border-radius: 10px;
 }
 
 .link-login h2{
