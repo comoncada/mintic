@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+@import 'media_page.css';
+
+*{
+
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../img/shoe_venta.jpg);
+  background-size:cover;
+}
+body, html {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  main {
+    width: 1200px;
+    height: auto;
+    margin:200px;
+    background:#ffff;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 20px;
+    border-top: 15px;
+    position: relative;
+  
+  
+  }
+  main h1 {
+    float: left;
+  }
+  main table {
+    width: 100%;
+  }
+  @media (min-width: 600px) {
+    main table tr {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    main table tr[property] th {
+      display: none;
+    }
+  }
+  @media (max-width: 599px) {
+    main table tr:first-child {
+      display: none;
+    }
+  }
+  main table tr:nth-child(even) {
+    background: #EEE;
+  }
+  main table tr.mv-deleted {
+    padding: 10px 10px;
+  }
+  main table tr button.mv-close {
+    padding: 4px 3px 3px;
+    margin-top: 3px;
+    margin-right: 3px;
+  }
+  main table tr button.mv-undo {
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+  }
+  main table tr button.mv-undo:hover {
+    background: #138bbb;
+    color: #fff;
+  }
+  main table tr td, main table tr th {
+    width: 100%;
+    padding: 10px;
+  }
+  @media (max-width: 599px) {
+    main table tr td, main table tr th {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      font-weight: 400 !important;
+      font-size: 15px !important;
+    }
+    main table tr th {
+      background: #fff !important;
+      color: #000 !important;
+    }
+    main table tr td:not(:first-of-type) {
+      background: #EEE;
+    }
+  }
+  @media (min-width: 600px) {
+    main table tr td:last-child, main table tr th:last-child {
+      max-width: 100px !important;
+    }
+  }
+  main table thead tr th {
+    background: #2c74d3;
+    border: #2c74d3;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  main table tbody tr th {
+    background: #fff;
+    border: #2c74d3;
+    color: #2c74d3;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 200;
+  }
+  main table tr th:first-child {
+    text-align: left;
+  }
+  @media (min-width: 600px) {
+    main table tr td {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (max-width: 599px) {
+    main table tr td:first-child {
+      background: #2c74d3;
+      color: #fff;
+      font-size: 15px !important;
+    }
+  }
+  main table tr td:not(:first-child) {
+    justify-content: center;
+  }
+  main table tr td:not(:first-child) input {
+    text-align: center !important;
+  }
+  main table tr td input.mv-editor {
+    width: 100% !important;
+    -webkit-appearance: none !important;
+    outline: 0 !important;
+  }
+  main table tr td input.mv-editor:focus {
+    padding: 5px 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -webkit-appearance: none !important;
+  }
+  main table tr td.mv-item-bar.mv-ui, main table tr td.mv-item-bar.mv-ui[hidden] {
+    position: static;
+    opacity: 1;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  @media (max-width: 599px) {
+    main table tr td.mv-item-bar.mv-ui, main table tr td.mv-item-bar.mv-ui[hidden] {
+      background: #fff;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  main table tr td.mv-item-bar.mv-ui button, main table tr td.mv-item-bar.mv-ui[hidden] button {
+    border-radius: 0;
+    background: #fff;
+  }
+  main table tr td.mv-item-bar.mv-ui button:hover, main table tr td.mv-item-bar.mv-ui[hidden] button:hover {
+    border-radius: 0;
+  }
+  main .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main .bar .saved {
+    color: #2c74d3;
+    font-size: 15px;
+    display: none;
+    padding-left: 35px;
+  }
+  main .mv-bar.mv-ui, main .mv-bar.mv-ui.mv-compact {
+    float: right;
+    margin-bottom: 25px;
+    background: transparent;
+    position: static !important;
+  }
+  main .mv-bar.mv-ui .mv-button, main .mv-bar.mv-ui button, main .mv-bar.mv-ui button:focus, main .mv-bar.mv-ui.mv-compact .mv-button, main .mv-bar.mv-ui.mv-compact button, main .mv-bar.mv-ui.mv-compact button:focus {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none !important;
+    border: 1px solid #2c74d3;
+    background: #2c74d3 !important;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 15px;
+    float: left;
+    cursor: pointer;
+    transition: all .3s;
+    margin-left: 15px;
+    text-shadow: none !important;
+  }
+  main .mv-bar.mv-ui .mv-button:before, main .mv-bar.mv-ui button:before, main .mv-bar.mv-ui button:focus:before, main .mv-bar.mv-ui.mv-compact .mv-button:before, main .mv-bar.mv-ui.mv-compact button:before, main .mv-bar.mv-ui.mv-compact button:focus:before {
+    display: none !important;
+  }
+  main .mv-bar.mv-ui .mv-button:hover, main .mv-bar.mv-ui button:hover, main .mv-bar.mv-ui button:focus:hover, main .mv-bar.mv-ui.mv-compact .mv-button:hover, main .mv-bar.mv-ui.mv-compact button:hover, main .mv-bar.mv-ui.mv-compact button:focus:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.2);
+  }
+  main .mv-bar.mv-ui .mv-button.mv-drag-handle, main .mv-bar.mv-ui button.mv-drag-handle, main .mv-bar.mv-ui button:focus.mv-drag-handle, main .mv-bar.mv-ui.mv-compact .mv-button.mv-drag-handle, main .mv-bar.mv-ui.mv-compact button.mv-drag-handle, main .mv-bar.mv-ui.mv-compact button:focus.mv-drag-handle {
+    border: none !important;
+    padding: 2px 0 0 10px !important;
+    font-size: 30px !important;
+    background: transparent !important;
+  }
+  .mv-add.mv-ui:not(.mv-add-row5) {
+    display: none !important;
+  }
+  main .mv-add-row5 {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    border: 1px solid #2c74d3;
+    background: #2c74d3;
+    color: #fff;
+    padding: 14px 25px;
+    margin-top: 15px;
+    float: left;
+    cursor: pointer;
+    transition: all .3s;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .mv-bar.mv-ui {
+    padding: 0;
+  }
+  main .mv-add-row5:hover {
+    transform: scale(1.1);
+  }
+  
+  [mv-app].mv-highlight-unsaved .mv-unsaved-changes {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+
+
+  .wrapper .search-box{
+    max-width: 500px;
+    left: 50%;
+    margin: 0, auto;
+    margin-top: 25px;
+    border-radius: 3px;
+    top: 50%;
+    transform: translate(200%, 190%);
+  
+  }
+
+  .wrapper .search-box input{
+    border: 0;
+    border-bottom: 2px solid #e5edfa;
+    width: 35%;
+    outline: none;
+    font-size: 18px;
+    padding: 5px;
+    
+  }
