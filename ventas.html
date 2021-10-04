@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas de Producto</title>
+    <link rel="stylesheet" href="./styles/style_ventas.css">
+    <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
+    
+    
+</head>
+<body>
+    <main mv-app="table" mv-storage="local" mv-mode="edit">
+      <div class="wrapper">
+        <div class="header">
+          <div class="search-box">
+          <input class="search" type="text" id="search_input" placeholder="Buscar producto">
+        </div>
+      </div>
+    </div>
+     
+        <h1>Portafolio de Productos</h1>
+        <table>
+          <tr>
+            <th id="id">ID Producto</th>
+            <th id="DescripciónProducto">Descripción</th>
+            <th id="Precio" >Precio</th>
+            <th id="Estado">Estado</th>
+            <th></th>
+          </tr>
+          <tr property="row" mv-multiple>
+            <td property="ID"></td>
+            <td property="DescripciónProducto"></td>
+            <td property="Precio"></td>
+            <td property="Estado"></td>
+            <td class="mv-item-bar mv-ui"></td>
+          </tr>
+          <tr property="row2" mv-multiple>
+            <td property="ID"></td>
+            <td property="DescripciónProducto"></td>
+            <td property="Precio"></td>
+            <td property="Estado"></td>
+            <td class="mv-item-bar mv-ui"></td>
+          </tr>
+          <tr property="row3" mv-multiple>
+            <td property="ID"></td>
+            <td property="DescripciónProducto"></td>
+            <td property="Precio"></td>
+            <td property="Estado"></td>
+            <td class="mv-item-bar mv-ui"></td>
+          </tr>
+          <tr property="row4" mv-multiple>
+            <td property="ID"></td>
+            <td property="DescripciónProducto"></td>
+            <td property="Precio"></td>
+            <td property="Estado"></td>
+            <td class="mv-item-bar mv-ui"></td>
+          </tr>
+          <tr property="row5" mv-multiple>
+            <td property="ID"></td>
+            <td property="DescripciónProducto"></td>
+            <td property="Precio"></td>
+            <td property="Estado"></td>
+            <td class="mv-item-bar mv-ui"></td>
+          </tr>
+        </table>
+      
+        <div class="bar">
+          <button class="mv-add-row5">Agregar</button>
+          <div class="saved">¡Se guardaron los cambios exitosamente!</div>
+          <div class="mv-bar mv-ui">
+            <button class="mv-save">Guardar</button>
+            <a class="mv-export mv-button">Exportar</a>
+          </div>
+        </div>
+      </main>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="./js/script_ventas.js"></script>
+      <script src="https://get.mavo.io/mavo.js"></script>
+</body>
+</html>
